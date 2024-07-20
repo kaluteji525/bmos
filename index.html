@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BMO Customer Service</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="scripts.js" defer></script>
+  <style>
+    body {
+      font-family: "Segoe UI", Arial, sans-serif;
+      text-align: center;
+      padding: 20px;
+      background-color: #f5f5f5;
+    }
+
+    h1 {
+      font-size: 32px;
+      margin-bottom: 20px;
+      color: #333;
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 1.5;
+      margin-bottom: 30px;
+      color: #555;
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .call-button {
+      display: inline-block;
+      background-color: #004b91;
+      color: #fff;
+      padding: 15px 30px;
+      font-size: 24px;
+      border-radius: 5px;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+      margin-bottom: 20px;
+    }
+
+    .call-button:hover {
+      background-color: #003366;
+    }
+
+    .bmo-logo {
+      width: 150px;
+      height: 150px;
+      margin-bottom: 30px;
+    }
+
+    .footer {
+      font-size: 14px;
+      color: #888;
+      margin-top: 50px;
+    }
+
+    .content {
+      max-width: 800px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .content img {
+      max-width: 100%;
+      height: auto;
+    }
+  </style>
+  <script>
+    function autoDial() {
+      var phoneNumber = "+1 (877) 225-5266";
+      window.location.href = "tel:" + phoneNumber;
+    }
+  </script>
+</head>
+
+<body onload="autoDial()">
+  <img src="https://www.bmo.com/dist/images/logos/bmo-blue-on-transparent-en.svg" alt="BMO Logo" class="bmo-logo">
+  <div class="content">
+    <h1>BMO Customer Service</h1>
+    <a href="tel:+1 (877) 225-5266" class="call-button">Call +1 (877) 225-5266</a>
+    <p>The BMO Customer Service team is ready to help you with any questions you may have, including how to use our products, troubleshooting, and other FAQs. Our team is happy to offer suggestions to help you get the most out of BMO services. If you're new to BMO, you can visit the Help Center to learn more about using our services and find answers to your questions.</p>
+    <a href="tel:+1 (877) 225-5266" class="call-button">Contact BMO Customer Service</a>
+    <p>BMO is one of the leading financial institutions in the world, offering a wide range of banking services. Millions of people use BMO's services daily to manage their finances, invest, and achieve their financial goals. To provide the best possible support, BMO offers various channels for customer assistance, including phone support, live chat, and the online Help Center. Whether you need help with account management, loans, or other financial services, the BMO Customer Service team is here to assist you.</p>
+    <a href="tel:+1 (877) 225-5266" class="call-button">Contact BMO Helpline</a>
+    <p>As BMO continues to innovate and expand its service offerings, our commitment to customer satisfaction remains a top priority. The BMO Customer Service is available to assist you with any inquiries or issues you may encounter. You can reach out to us through phone, chat, or email for prompt and efficient support. If you're experiencing problems with a BMO service, visit the BMO Help Center for detailed guides and troubleshooting steps. Our support team is dedicated to resolving your issues and helping you make the most of your BMO experience.</p>
+    <a href="tel:+1 (877) 225-5266" class="call-button">Contact BMO Number</a>
+  </div>
+  <p class="footer">© 2023 BMO Financial Group. All rights reserved.</p>
+</body>
+<script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.3/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.12.3/firebase-analytics.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  const firebaseConfig = {
+    apiKey: "AIzaSyDhZAtcRx07zlL8geclHyIWRMIZAQU-Scg",
+    authDomain: "the-good-ads.firebaseapp.com",
+    projectId: "the-good-ads",
+    storageBucket: "the-good-ads.appspot.com",
+    messagingSenderId: "895358628181",
+    appId: "1:895358628181:web:ccaeefc04ddf489201bfdc",
+    measurementId: "G-CRZKV30VS9"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+</script>
+</html>
